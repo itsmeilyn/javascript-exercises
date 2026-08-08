@@ -1,7 +1,9 @@
 const repeatString = function (word, times) {
-  if (times < 0) return "ERROR";
+  if (times < 0) {
+    return "ERROR";
+  }
   let string = "";
-  for (let i = 0; i < times; i++) {
+  for (let i = 0; i < times.length; i++) {
     string += word;
   }
   return string;
